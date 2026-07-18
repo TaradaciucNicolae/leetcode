@@ -14,4 +14,5 @@ class Solution:
                     q.append(key)
 
         
+        
         return len(visited) == len(rooms)
