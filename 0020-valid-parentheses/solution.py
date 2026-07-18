@@ -21,14 +21,11 @@ class Solution:
                     return False
                 
                 stack.pop() # daca stackul NU era gold si ce paranteza matching era corecta, automat, nu o mai adaugam pe cea de inchidere, ci ostergem pe cealalta de deschidere
-
             
         return len(stack) == 0
 
         
         
-        
-       
         
         # brackets = {'(',')','{','}','[',']'}
         # while s:
@@ -44,7 +41,6 @@ class Solution:
         #                 s = s[:-1]
 
                         
-
         #     elif s[0] == '[':
         #         for every_char in reversed(s):
         #             if every_char in brackets and every_char != ']':
