@@ -55,8 +55,3 @@ It can be shown that there are no other paths with a higher safeness factor.
 - `grid[i].length == n`
 - `grid[i][j]` is either `0` or `1`.
 - There is at least one thief in the `grid`.
-
-## Submission
-
-- Runtime: 2234 ms
-- Memory: 31.4 MB
