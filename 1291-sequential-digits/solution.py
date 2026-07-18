@@ -14,4 +14,5 @@ class Solution:
                 if low <= number <= high:
                     output.append(number)
 
+
         return output
