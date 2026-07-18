@@ -40,8 +40,3 @@ Output: [5,3,4,2,8,6,7,1,3]
 
  - `0 <= arr.length <= 105`
 - `-109 <= arr[i] <= 109`
-
-## Submission
-
-- Runtime: 38 ms
-- Memory: 42.3 MB
