@@ -12,5 +12,4 @@ class Solution:
             if smallest % reversed_counter == 0 and largest % reversed_counter == 0:
                 return reversed_counter
 
-
             reversed_counter -= 1
