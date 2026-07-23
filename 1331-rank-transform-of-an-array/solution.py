@@ -1,33 +1,22 @@
 class Solution:
     def arrayRankTransform(self, arr: List[int]) -> List[int]:
+        
 
-        unique_arr = set(arr)
-        unique_sorted_arr  = sorted(unique_arr)
+        set_no_duplicates = set(arr)  # a set can't have duplicates
 
-        rank_map = {}
+        sorted_array_no_duplicate = sorted(set_no_duplicates)
 
-        for i, num in enumerate(unique_sorted_arr):
-            rank_map[num] = i + 1
 
-        n = len(arr)
-        result = []
+        rank_map = {} # we create a map for a smaller complexity (when searching for index)
 
-        for num in arr:
-            result.append(rank_map[num])
+        for i, val in enumerate(sorted_array_no_duplicate):
+            rank_map[val] = i + 1
+
+
+        n=len(arr)
+        result = [0]* n
+
+        for i in range(n):
+            result[i] = rank_map[arr[i]]
 
         return result
-
-        # unique_arr = set(arr)
-        # unique_sorted_arr  = sorted(unique_arr)
-
-        # n = len(arr)
-
-        # rank_list= [0]*n
-
-
-        # for i in range(n):
-
-        #     rank_list[i] = unique_sorted_arr.index(arr[i]) +1
-
-        
-        # return rank_list
